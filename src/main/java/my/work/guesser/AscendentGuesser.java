@@ -1,14 +1,16 @@
-package my.work;
+package my.work.guesser;
 
-public class DescendGuesser extends Guesser {
+import my.work.storage.Storage;
 
-    public DescendGuesser(Storage storage, int maxNumber) {
+public class AscendentGuesser extends Guesser {
+
+    public AscendentGuesser(Storage storage, int maxNumber) {
         super(storage, maxNumber);
     }
 
     @Override
     public void run() {
-        for (var i = getMaxNumber(); i >= 0; i--) {
+        for (var i = 0; i <= getMaxNumber(); i++) {
             try {
                 if (getStorage().isNumber(i)) {
                     System.out.println("Number " + i + " found by " + getName());
@@ -19,4 +21,5 @@ public class DescendGuesser extends Guesser {
             }
         }
     }
+
 }

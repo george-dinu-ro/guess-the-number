@@ -1,4 +1,6 @@
-package my.work;
+package my.work.guesser;
+
+import my.work.storage.Storage;
 
 import java.util.Random;
 

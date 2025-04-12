@@ -1,4 +1,4 @@
-package my.work;
+package my.work.storage;
 
 public class Storage {
 

@@ -1,4 +1,4 @@
-package my.work;
+package my.work.arbiter;
 
 public class Arbiter extends Thread {
 
